@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  startDate: 2018-04-07
+  endDate: 2018-04-07
+  checkinTime: 2018-04-07 17:25:10
+  checkoutTime: 2018-04-07 17:25:10
+  numberOfGuests: 1
+  total: 1
+  customerId: 1
+  hotelId: 1
+  roomNumber: 1
+  paymentId: 1
+
+two:
+  startDate: 2018-04-07
+  endDate: 2018-04-07
+  checkinTime: 2018-04-07 17:25:10
+  checkoutTime: 2018-04-07 17:25:10
+  numberOfGuests: 1
+  total: 1
+  customerId: 1
+  hotelId: 1
+  roomNumber: 1
+  paymentId: 1

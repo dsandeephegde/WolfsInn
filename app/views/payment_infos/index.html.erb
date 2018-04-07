@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Payment Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ssn</th>
+      <th>Billingaddress</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Paymentmethod</th>
+      <th>Cardnumber</th>
+      <th>Customerid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @payment_infos.each do |payment_info| %>
+      <tr>
+        <td><%= payment_info.SSN %></td>
+        <td><%= payment_info.billingAddress %></td>
+        <td><%= payment_info.City %></td>
+        <td><%= payment_info.State %></td>
+        <td><%= payment_info.Country %></td>
+        <td><%= payment_info.paymentMethod %></td>
+        <td><%= payment_info.cardNumber %></td>
+        <td><%= payment_info.customerId %></td>
+        <td><%= link_to 'Show', payment_info %></td>
+        <td><%= link_to 'Edit', edit_payment_info_path(payment_info) %></td>
+        <td><%= link_to 'Destroy', payment_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Payment Info', new_payment_info_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @room_price.category %>
+</p>
+
+<p>
+  <strong>Maxoccupancy:</strong>
+  <%= @room_price.maxOccupancy %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @room_price.price %>
+</p>
+
+<%= link_to 'Edit', edit_room_price_path(@room_price) %> |
+<%= link_to 'Back', room_prices_path %>

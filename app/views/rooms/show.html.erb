@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Roomnumber:</strong>
+  <%= @room.roomNumber %>
+</p>
+
+<p>
+  <strong>Hotelid:</strong>
+  <%= @room.hotelId %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @room.category %>
+</p>
+
+<p>
+  <strong>Maxoccupancy:</strong>
+  <%= @room.maxOccupancy %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @room.availability %>
+</p>
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>

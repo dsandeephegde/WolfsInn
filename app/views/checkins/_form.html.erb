@@ -1,0 +1,67 @@
+<%= form_with(model: checkin, local: true) do |form| %>
+  <% if checkin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(checkin.errors.count, "error") %> prohibited this checkin from being saved:</h2>
+
+      <ul>
+      <% checkin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :startDate %>
+    <%= form.date_select :startDate, id: :checkin_startDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endDate %>
+    <%= form.date_select :endDate, id: :checkin_endDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :checkinTime %>
+    <%= form.time_select :checkinTime, id: :checkin_checkinTime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :checkoutTime %>
+    <%= form.time_select :checkoutTime, id: :checkin_checkoutTime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numberOfGuests %>
+    <%= form.number_field :numberOfGuests, id: :checkin_numberOfGuests %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total %>
+    <%= form.number_field :total, id: :checkin_total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :customerId %>
+    <%= form.number_field :customerId, id: :checkin_customerId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hotelId %>
+    <%= form.number_field :hotelId, id: :checkin_hotelId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :roomNumber %>
+    <%= form.number_field :roomNumber, id: :checkin_roomNumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :paymentId %>
+    <%= form.number_field :paymentId, id: :checkin_paymentId %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

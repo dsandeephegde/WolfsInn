@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  roomNumber: 1
+  hotelId: 1
+  category: MyString
+  maxOccupancy: 1
+  availability: false
+
+two:
+  roomNumber: 1
+  hotelId: 1
+  category: MyString
+  maxOccupancy: 1
+  availability: false

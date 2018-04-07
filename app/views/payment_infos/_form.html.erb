@@ -1,0 +1,57 @@
+<%= form_with(model: payment_info, local: true) do |form| %>
+  <% if payment_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(payment_info.errors.count, "error") %> prohibited this payment_info from being saved:</h2>
+
+      <ul>
+      <% payment_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :SSN %>
+    <%= form.text_field :SSN, id: :payment_info_SSN %>
+  </div>
+
+  <div class="field">
+    <%= form.label :billingAddress %>
+    <%= form.text_field :billingAddress, id: :payment_info_billingAddress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :City %>
+    <%= form.text_field :City, id: :payment_info_City %>
+  </div>
+
+  <div class="field">
+    <%= form.label :State %>
+    <%= form.text_field :State, id: :payment_info_State %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Country %>
+    <%= form.text_field :Country, id: :payment_info_Country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :paymentMethod %>
+    <%= form.text_field :paymentMethod, id: :payment_info_paymentMethod %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cardNumber %>
+    <%= form.text_field :cardNumber, id: :payment_info_cardNumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :customerId %>
+    <%= form.number_field :customerId, id: :payment_info_customerId %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

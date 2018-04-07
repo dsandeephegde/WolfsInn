@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serviceId: 1
+  checkinId: 1
+  price: 1
+
+two:
+  serviceId: 1
+  checkinId: 1
+  price: 1

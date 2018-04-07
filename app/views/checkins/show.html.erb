@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @checkin.startDate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @checkin.endDate %>
+</p>
+
+<p>
+  <strong>Checkintime:</strong>
+  <%= @checkin.checkinTime %>
+</p>
+
+<p>
+  <strong>Checkouttime:</strong>
+  <%= @checkin.checkoutTime %>
+</p>
+
+<p>
+  <strong>Numberofguests:</strong>
+  <%= @checkin.numberOfGuests %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @checkin.total %>
+</p>
+
+<p>
+  <strong>Customerid:</strong>
+  <%= @checkin.customerId %>
+</p>
+
+<p>
+  <strong>Hotelid:</strong>
+  <%= @checkin.hotelId %>
+</p>
+
+<p>
+  <strong>Roomnumber:</strong>
+  <%= @checkin.roomNumber %>
+</p>
+
+<p>
+  <strong>Paymentid:</strong>
+  <%= @checkin.paymentId %>
+</p>
+
+<%= link_to 'Edit', edit_checkin_path(@checkin) %> |
+<%= link_to 'Back', checkins_path %>

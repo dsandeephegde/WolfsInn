@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Serviceid:</strong>
+  <%= @buy.serviceId %>
+</p>
+
+<p>
+  <strong>Checkinid:</strong>
+  <%= @buy.checkinId %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @buy.price %>
+</p>
+
+<%= link_to 'Edit', edit_buy_path(@buy) %> |
+<%= link_to 'Back', buys_path %>

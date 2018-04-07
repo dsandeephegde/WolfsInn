@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ssn:</strong>
+  <%= @payment_info.SSN %>
+</p>
+
+<p>
+  <strong>Billingaddress:</strong>
+  <%= @payment_info.billingAddress %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @payment_info.City %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @payment_info.State %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @payment_info.Country %>
+</p>
+
+<p>
+  <strong>Paymentmethod:</strong>
+  <%= @payment_info.paymentMethod %>
+</p>
+
+<p>
+  <strong>Cardnumber:</strong>
+  <%= @payment_info.cardNumber %>
+</p>
+
+<p>
+  <strong>Customerid:</strong>
+  <%= @payment_info.customerId %>
+</p>
+
+<%= link_to 'Edit', edit_payment_info_path(@payment_info) %> |
+<%= link_to 'Back', payment_infos_path %>
